@@ -9,10 +9,10 @@ package proyecto;
  *
  * @author Dvn
  */
-public class cliente {
+public class Cliente {
 	
 
- private int id;
+    private int id;
     private String nombre;
     private String apellido;
     private int numCard;
@@ -20,10 +20,10 @@ public class cliente {
     private double saldo;
     private int intentos;
 
-    public cliente() {
+    public Cliente() {
     }
 
-    public cliente(int id, String nombre, String apellido, int numCard, int pin, double saldo, int intentos) {
+    public Cliente(int id, String nombre, String apellido, int numCard, int pin, double saldo, int intentos) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -89,7 +89,11 @@ public class cliente {
         this.intentos = intentos;
     }
 
-	
+	 @Override
+    public String toString() {
+        return "Cliente{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", numCard=" + numCard + ", pin=" + pin + ", saldo=" + saldo + ", intentos=" + intentos + '}';
+    }
+ 
 	
 	
 }
